@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up </title>
+</head>
+<body> 
+    <form action="login.html">
+        <div class="form">
+            <h1>Sign Up Form</h1>
+            <hr>
+
+            
+             <input type="text" placeholder="Enter Fullname" name="Fullname" id="Fullname" required><br><br>
+
+             <input type="text" placeholder="Enter Email" name="email" id="email" required ><br><br>
+
+             <input type="number" placeholder="Enter number" name="number" pattern="[0-9]{10}" required><br><br>
+
+            <input type="password" placeholder="Enter Password"name="password" id="password"
+             required><br><br>
+
+            <input type="password"  placeholder="Repeat Password"name="repeatPassword" id="repeatPassword"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+             required><br>
+
+        <label><input type="checkbox" checked="checked" name="remember" id="check">Remember me</label>
+        
+            <p>
+                By creating an account you agree to our
+                <a href="#" style="color:rgb(75, 143, 210)">
+                    Terms & Privacy</a>.
+            </p>
+            <div>
+                <button type="submit"  class="signup" >
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
